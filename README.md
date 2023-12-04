@@ -1,4 +1,4 @@
-### Hosted [here](https://faculty-scrape-pranvexploder.vercel.app/)!
+### Hosted [here](https://faculty-scrape.vercel.app/)!
 
 Wanted to spend some time learning web scraping using Python and BeautifulSoup, ended up learning a little bit of web development too! win-win.
 
