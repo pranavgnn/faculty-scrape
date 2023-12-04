@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<ol class="list-group list-group-numbered">
+    {% for subdata in data %}
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                <a class="text-decoration-none text-black" href="{{ subdata[0].replace(' ', '-') }}">
+                    {{ subdata[0] }}
+                </a>
+            </div>
+            There are {{ subdata[1] }} faculties in this department.
+        </div>
+        <span class="badge bg-primary rounded-pill">{{ subdata[1] }}</span>
+    </li>
+    {% endfor %}
+</ol>
+</div>
+</div>
+{% endblock %}

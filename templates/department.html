@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}{{ department_name }}{% endblock %}
+
+{% block content %}
+    {% for member in members %}
+        <div class="card mb-3" style="max-width: 420px; margin-inline: 10px;">
+            <div class="row g-0">
+                <div class="col-md-4 d-flex">
+                    <img src="{{ member['image_url'] }}" class="img-fluid rounded-start">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ member["name"] }}</h5>
+                        <p class="card-text">{{ member["designation"] }}</p>
+                        <p class="card-text"><small class="text-body-secondary">{{ member["email"] }}</small></p>
+                    </div>
+                </div>
+        </div>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+{% for member in members %}
+<img src="" width="100px" height="100px">
+<p>Name: {{ member["name"] }}</p>
+<p>Designation: {{ member["designation"] }}</p>
+<p>Email: {{ member["email"] }}</p>
+<hr>
+{% endfor %}
+</body>
+
+</html>
