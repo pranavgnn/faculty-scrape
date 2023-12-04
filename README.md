@@ -1,3 +1,5 @@
+### Hosted [here](https://faculty-scrape-pranvexploder.vercel.app/)!
+
 Wanted to spend some time learning web scraping using Python and BeautifulSoup, ended up learning a little bit of web development too! win-win.
 
 * scraper.py - scrapes the faculty list from the [official website](https://manipal.edu/mit/department-faculty.html) using python and BeautifulSoup.
