@@ -36,7 +36,7 @@ def scrape_member(member):
     name = h4.text.strip()
     designation = p[0].text.strip()
     email = p[1].text.strip()
-    image_url = base_url + img["data-src"] if ("data-src" in img.attrs) else ""
+    image_url = base_url + img["data-src"].replace(" ", "%20") if ("data-src" in img.attrs) else ""
 
     return {
         "name": name,
